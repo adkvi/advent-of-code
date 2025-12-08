@@ -148,10 +148,9 @@ ehthumbs.db
 Thumbs.db
 
 # Advent of Code specific
-# Input files (often contain puzzle input specific to your account)
-input.txt
-*.input
-inputs/
+# input.txt
+# *.input
+# inputs/
 
 # Solution outputs
 output.txt
