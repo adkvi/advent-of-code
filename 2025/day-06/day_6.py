@@ -1,4 +1,7 @@
+"""Advent of Code 2025 - Day 6: Cephalopod Math Worksheet."""
+
 def solve_part1():
+    """Calculate grand total reading numbers horizontally (row-wise)."""
     with open('input.txt') as f: lines = f.read().strip().split('\n')
     grid, ops = [list(l) for l in lines[:-1]], lines[-1]
     
@@ -14,6 +17,7 @@ def solve_part1():
     return sum(sum(nums) if op == '+' else eval('*'.join(map(str, nums))) for nums, op in problems)
 
 def solve_part2():
+    """Calculate grand total reading numbers vertically (column-wise)."""
     with open('input.txt') as f: lines = f.read().strip().split('\n')
     grid, ops = [list(l) for l in lines[:-1]], lines[-1]
     
